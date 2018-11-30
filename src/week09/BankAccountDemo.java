@@ -8,6 +8,9 @@ public class BankAccountDemo {
     public static void main (String[] args){
         BankAccount b = new BankAccount("783268323", "Jane Doe", true);
         System.out.println(b);
-        b.isHasOverdraft();
+        if (b.getAccountNumber()=="783268323"){
+            System.out.println("Hello"+b.getAccountHolder());
+
+        }
     }
 }
